@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universitas Indraprasta PGRI (UNINDRA)</title>
+  <style>
+    body {
+      background-color: yellow;
+      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header logo dan teks */
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+      text-align: center;
+      transform: translateX(60px); /* geser 60px ke kanan */
+    }
+
+    .header img {
+      width: 100px;
+      height: auto;
+    }
+
+    .judul {
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    .judul h1 {
+      color: blue;
+      font-size: 24px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .judul h2 {
+      color: blue;
+      font-size: 20px;
+      margin: 2px 0 0 0;
+      font-weight: bold;
+    }
+
+    /* Animasi alamat berjalan */
+    .jalan {
+      color: red;
+      font-size: 18px;
+      animation: gerak 6s infinite alternate;
+      position: relative;
+      display: inline-block;
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+      transform: translateX(60px); /* sejajar 60px ke kanan */
+    }
+
+    @keyframes gerak {
+      0% { left: -100px; }
+      100% { left: 100px; }
+    }
+
+    /* Garis biru */
+    .garis-biru {
+      background-color: darkblue;
+      height: 3px;
+      width: 85%;
+      margin: 10px auto 20px auto;
+      transform: translateX(60px);
+    }
+
+    /* Tabel luar */
+    .tabel-luar {
+      border: 1px solid black;
+      width: 620px;
+      margin: 20px auto;
+      padding: 3px;
+      background-color: yellow;
+      transform: translateX(60px);
+    }
+
+    /* Tabel dalam */
+    .tabel-dalam {
+      border-collapse: separate;
+      border-spacing: 4px;
+      width: 100%;
+      background-color: yellow;
+    }
+
+    .tabel-dalam th,
+    .tabel-dalam td {
+      border: 2px solid black;
+      padding: 3px 8px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      background-color: yellow;
+    }
+
+    .tabel-dalam th {
+      width: 140px;
+    }
+
+    .tabel-dalam td.colon {
+      width: 10px;
+      text-align: left;
+      padding-left: 2px;
+    }
+
+    .tabel-dalam td.isi {
+      width: 400px;
+    }
+
+    /* Tombol simpan */
+    .btn-container {
+      text-align: center;
+      margin: 10px 0;
+      transform: translateX(60px); /* sejajar 60px ke kanan */
+    }
+
+    button {
+      padding: 6px 20px;
+      font-size: 15px;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      border: 2px solid black;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    /* Daftar fakultas */
+    .list-container {
+      font-size: 15px;
+      margin-left: 150px;
+      margin-top: 10px;
+    }
+
+    .list-container h3 {
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 5px;
+    }
+
+    ol {
+      margin-left: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/id/2/2a/Logo_Unindra.png" alt="Logo UNINDRA">
+    <div class="judul">
+      <h1>UNIVERSITAS INDRAPRASTA PGRI</h1>
+      <h2>(UNINDRA)</h2>
+    </div>
+  </div>
+
+  <!-- Alamat berjalan -->
+  <div class="jalan">Jl. Nangka No.58 Tanjung Barat - JakSel</div>
+
+  <!-- Garis biru -->
+  <div class="garis-biru"></div>
+
+  <!-- Tabel Nama dan NPM -->
+  <div class="tabel-luar">
+    <table class="tabel-dalam">
+      <tr>
+        <th>Nama</th>
+        <td class="colon">:</td>
+        <td class="isi">Dharma Putra Prasetyo</td>
+      </tr>
+      <tr>
+        <th>NPM</th>
+        <td class="colon">:</td>
+        <td class="isi">202433500284</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Daftar FTIK di kiri -->
+  <div class="list-container">
+    <h3>FTIK :</h3>
+    <ol type="A">
+      <li>Informatika</li>
+      <li>Teknik Arsitektur</li>
+      <li>Teknik Industri</li>
+    </ol>
+  </div>
+
+  <!-- Tombol simpan di tengah -->
+  <div class="btn-container">
+    <button>SIMPAN</button>
+  </div>
+
+  <!-- Daftar MIPA di kiri -->
+  <div class="list-container">
+    <h3>MIPA :</h3>
+    <ol type="I">
+      <li>Matematika</li>
+      <li>Fisika</li>
+      <li>Biologi</li>
+    </ol>
+  </div>
+
+</body>
+</html>
